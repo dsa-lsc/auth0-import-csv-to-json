@@ -9,16 +9,26 @@ git clone <repo>
 yarn install
 ```
 
+## CSV To JSON
+
 Then run the script with the csv file you want to use.
 
 ```
-node index.js --file <name of file>
+node csv-to-json.js --file <name of file>
 ```
 
 This will output a JSON string. You can send this JSON string to a file by piping it:
 
 ```
-node index.js --file data/users.csv > output.json
+node csv-to-json.js --file data/users.csv > output.json
 ```
 
 Then you can use the Auth0 import extension to import users.
+
+## CSV To Emails
+
+This is useful for if you have a CSV and just want the e-mails to, for example, send everyone an email.
+
+```
+node csv-to-emails.js --file data/users.csv
+```
