@@ -1,0 +1,10 @@
+{
+  "name": "convert-csv-to-auth0-spreadsheet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^6.0.0",
+    "csv-parser": "^2.3.3"
+  }
+}
